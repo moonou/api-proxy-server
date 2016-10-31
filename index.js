@@ -5,7 +5,12 @@ const request = require('request')
 app.use(function *(){
   if (this.query.target) {
     let result = yield new Promise((resolve, reject) => {
-      request(this.query.target, (err, response, body) => {
+      request({
+        url: this.query.target,
+        headers: {
+          'User-Agent': 'Awesome-Octocat-App'
+        }
+      }, (err, response, body) => {
         if (err) throw err
         resolve(body)
       })
@@ -18,3 +23,5 @@ app.use(function *(){
 })
 
 app.listen(3000)
+
+module.exports = app
