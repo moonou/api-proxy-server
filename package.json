@@ -1,0 +1,10 @@
+{
+  "name": "api_proxy",
+  "version": "0.0.1",
+  "description": "a http proxy for some cors request",
+  "author": "moonou <moonoulong@gmail.com>",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "request": "^2.76.0"
+  }
+}
