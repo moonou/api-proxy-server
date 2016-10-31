@@ -1,6 +1,6 @@
 # Api Proxy
 
-this project is proxy cors request
+this project is proxy cors request for `GET`
 
 # Usea
 
